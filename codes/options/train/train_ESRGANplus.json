@@ -28,8 +28,7 @@
         }
     },
     "path": {
-        "root": "./BasicSR",
-        "pretrain_model_G": "./pretrained_models/RRDB_PSNR_x4_old_arch.pth"
+        "root": "./BasicSR"
     },
     "network_G": {
         "which_model_G": "RRDB_net",
@@ -72,11 +71,11 @@
         "gan_type": "vanilla",
         "gan_weight": 0.005,
         "manual_seed": 0,
-        "niter": 500000.0,
-        "val_freq": 50000.0
+        "niter": 10000.0,
+        "val_freq": 2000.0
     },
     "logger": {
         "print_freq": 50,
-        "save_checkpoint_freq": 500000.0
+        "save_checkpoint_freq": 5000.0
     }
 }
